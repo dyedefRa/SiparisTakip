@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\EntityFramework\Context\" />
+    <Folder Include="Concrete\EntityFramework\Repository\" />
+  </ItemGroup>
+
 </Project>
