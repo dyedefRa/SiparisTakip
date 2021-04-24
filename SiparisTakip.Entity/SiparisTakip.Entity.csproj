@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +50,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Aksesuar.cs" />
+    <Compile Include="Model\Appointment.cs" />
+    <Compile Include="Model\Ayarlar.cs" />
+    <Compile Include="Model\BankaHesap.cs" />
+    <Compile Include="Model\BankaHesapHareket.cs" />
+    <Compile Include="Model\Cari.cs" />
+    <Compile Include="Model\CariHareket.cs" />
+    <Compile Include="Model\CariStokFiyat.cs" />
+    <Compile Include="Model\Fatura.cs" />
+    <Compile Include="Model\FaturaDetay.cs" />
+    <Compile Include="Model\Il.cs" />
+    <Compile Include="Model\Ilce.cs" />
+    <Compile Include="Model\Isyeri.cs" />
+    <Compile Include="Model\Kasa.cs" />
+    <Compile Include="Model\Kullanici.cs" />
+    <Compile Include="Model\KullaniciYetki.cs" />
+    <Compile Include="Model\Maa.cs" />
+    <Compile Include="Model\MaasHareket.cs" />
+    <Compile Include="Model\Marka.cs" />
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="Model\Personel.cs" />
+    <Compile Include="Model\Resource.cs" />
+    <Compile Include="Model\RutHareketPlani.cs" />
+    <Compile Include="Model\Sabit.cs" />
+    <Compile Include="Model\Sati.cs" />
+    <Compile Include="Model\SatisDetay.cs" />
+    <Compile Include="Model\Sektor.cs" />
+    <Compile Include="Model\Stok.cs" />
+    <Compile Include="Model\StokDepo.cs" />
+    <Compile Include="Model\StokETicaret.cs" />
+    <Compile Include="Model\StokHareket.cs" />
+    <Compile Include="Model\StokResim.cs" />
+    <Compile Include="Model\StokSayim.cs" />
+    <Compile Include="Model\StokSayimDetay.cs" />
+    <Compile Include="Model\StokVaryant.cs" />
+    <Compile Include="Model\sysdiagram.cs" />
+    <Compile Include="Model\Tanim.cs" />
+    <Compile Include="Model\TanimGrup.cs" />
+    <Compile Include="Model\TeknikServi.cs" />
+    <Compile Include="Model\Ulke.cs" />
+    <Compile Include="Model\vw_BankaHesap.cs" />
+    <Compile Include="Model\vw_BankaHesapHareket.cs" />
+    <Compile Include="Model\vw_CariBakiye.cs" />
+    <Compile Include="Model\vw_CariHareket.cs" />
+    <Compile Include="Model\vw_Fatura.cs" />
+    <Compile Include="Model\vw_FaturaDetay.cs" />
+    <Compile Include="Model\vw_Kullanici.cs" />
+    <Compile Include="Model\vw_SatisDetayListesi.cs" />
+    <Compile Include="Model\vw_SatisListesi.cs" />
+    <Compile Include="Model\vw_StokDetayliHesapEkstresi.cs" />
+    <Compile Include="Model\vw_StokHareketListesi.cs" />
+    <Compile Include="Model\vw_StokListesi.cs" />
+    <Compile Include="Model\vw_StokSayim.cs" />
+    <Compile Include="Model\vw_StokVaryantListesi.cs" />
+    <Compile Include="Model\vw_TeknikServis.cs" />
+    <Compile Include="Model\Yetki.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
