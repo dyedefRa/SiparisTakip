@@ -16,21 +16,21 @@ namespace SiparisTakip.MVCWebUI.Contollers
             return View();
         }
 
-        public JsonResult KullaniciGiris(Kullanici kullanici)
-        {
-            try
-            {
-              var user=  kullaniciService.GirisYap(kullanici.KullaniciAdi, kullanici.Parola);
-                if (user!=null)
-                {
-                    //Session["kullaniciId"] = kullanici.KullaniciID;
-                }
-            }
-            catch (System.Exception)
-            {
+        //public JsonResult KullaniciGiris(Kullanici kullanici)
+        //{
+        //    try
+        //    {
+        //      var user=  kullaniciService.GirisYap(kullanici.KullaniciAdi, kullanici.Parola);
+        //        if (user!=null)
+        //        {
+        //            //Session["kullaniciId"] = kullanici.KullaniciID;
+        //        }
+        //    }
+        //    catch (System.Exception)
+        //    {
 
-                throw;
-            }
-        }
+        //        throw;
+        //    }
+        //}
     }
 }
