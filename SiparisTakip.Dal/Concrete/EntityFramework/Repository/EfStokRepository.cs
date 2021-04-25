@@ -1,4 +1,4 @@
-﻿using SiparisTakip.Dal.Abstract.StokDal;
+﻿using SiparisTakip.Dal.Abstract.GeneralDal;
 using SiparisTakip.Dal.Concrete.EntityFramework.Context;
 using SiparisTakip.Entity.Model;
 using System;
@@ -6,8 +6,6 @@ using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SiparisTakip.Dal.Concrete.EntityFramework.Repository
 {
